@@ -1,0 +1,14 @@
+[Unit]
+Description=SSTServer
+After=network.target
+
+[Service]
+User=tomcat8
+Group=tomcat8
+Type=simple
+ExecStart=/bin/bash -c 'cd /usr/share/tomcat8/heilman && ./runSSTServer.sh'
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
