@@ -18,6 +18,7 @@ Copy build/libs/heilman-server.war, systemd/*.service, and heilman-master.zip
 (the heilman repository zip file downloaded from github) to ubuntu@server.
 
 Run the following commands on the server:
+
     apt-get update
     apt-get install tomcat8 unzip
     cp /home/ubuntu/*.service /lib/systemd/system
@@ -34,4 +35,5 @@ Run the following commands on the server:
     systemctl restart tomcat8
 
 To test goto:
+
     http://server:8080/heilman-server/simplify?input=Danny+was+born+in+1992+and+loves+choclate
