@@ -1,0 +1,7 @@
+apply plugin: 'war'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+
+dependencies {
+    compile fileTree(dir: '../heilman', include:
+        ['question-generation.jar', 'lib/jwnl.jar'])
+}
